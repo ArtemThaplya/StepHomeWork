@@ -1,8 +1,9 @@
 package homeWork_17_rundomList.addLinkedList;
 
-public class Main {
+public class Application {
     public static void main(String[] args) {
         RandomAddLinkedList randomAddLinkedList = new RandomAddLinkedList();
-        randomAddLinkedList.inputSize();
+        Thread myThready = new Thread(randomAddLinkedList::inputSize);
+        myThready.start();
     }
 }

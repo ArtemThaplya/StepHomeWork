@@ -4,7 +4,7 @@ public class Array<T, I>  {
     private PerformOperations  performOperations = new PerformOperations();
     OneArray[] OneArray;
 
-   Array() {
+   public Array() {
         OneArray = new OneArray[3];
         for (int i = 0; i < 3; i++) {
             OneArray[i] = new OneArray();

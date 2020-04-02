@@ -1,4 +1,4 @@
-package test_Java_SE;
+package shipLoading_Thread;
 
 public class LoadingOfShip {
     static int loadingOfShip(int cargoPort, int cargoShip){

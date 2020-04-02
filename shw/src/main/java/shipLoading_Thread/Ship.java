@@ -1,4 +1,4 @@
-package test_Java_SE;
+package shipLoading_Thread;
 
 public class Ship extends Port {
     private int cargoPort;
@@ -16,7 +16,7 @@ public class Ship extends Port {
             }
             cogestionShip = true;
         } else {
-            System.out.println(Thread.currentThread().getName() + "Корабль полный.");
+            System.out.println(Thread.currentThread().getName() + " Корабль полный.");
             cogestionShip = false;
         }
         return cogestionShip;
@@ -33,7 +33,7 @@ public class Ship extends Port {
                 cargoPort++;
             }
         } else {
-            System.out.println(Thread.currentThread().getName() + "Корабль разгружен!");
+            System.out.println(Thread.currentThread().getName() + " Корабль разгружен!");
         }
         return cargoPort;
     }

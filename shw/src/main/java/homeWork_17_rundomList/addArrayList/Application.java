@@ -1,8 +1,9 @@
 package homeWork_17_rundomList.addArrayList;
 
-public class Main {
+public class Application {
     public static void main(String[] args) {
         RandomAddArrayList randomAddList = new RandomAddArrayList();
-        randomAddList.inputSize();
+        Thread thread = new Thread(randomAddList::inputSize);
+        thread.start();
     }
 }

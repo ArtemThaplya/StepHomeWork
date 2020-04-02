@@ -1,10 +1,10 @@
 package homeWork_14_InternetMagaz;
 
 public class TV<T> {
-    T manufacturer;
-    T price;
-    T diagonal;
-    T count;
+    private T manufacturer;
+    private T price;
+    private T diagonal;
+    private T count;
 
     public TV(T manufacturer, T price, T diagona, T count) {
         this.manufacturer = manufacturer;
